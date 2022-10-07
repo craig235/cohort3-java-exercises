@@ -22,10 +22,15 @@ public class Audi extends Car {
     @Override
     public String getCarDetails() {
         String separator = ",";
-        StringBuilder sb = new StringBuilder(super.getCarDetails());
-        sb.append(separator);
+        StringBuilder sb = new StringBuilder();
+        sb.append(getId()).append(separator);
+        sb.append(getName()).append(separator);
+        sb.append(getPrice()).append(separator);
+        sb.append(getEngineCC()).append(separator);
+        sb.append(getFuelType()).append(separator);
+        sb.append(getManufacturingYear()).append(separator);
         sb.append(getModel()).append(separator);
-        sb.append(isEVAvailable()).append(separator);
+        sb.append(isEVAvailable());
         return sb.toString();
     }
 }
