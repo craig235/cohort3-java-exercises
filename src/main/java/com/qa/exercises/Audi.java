@@ -1,6 +1,6 @@
 package com.qa.exercises;
 
-public class Audi extends Car {
+public class Audi extends CarProperties implements Car {
 
     private String model;
     private boolean isEVAvailable;
@@ -19,7 +19,6 @@ public class Audi extends Car {
         return isEVAvailable;
     }
 
-    @Override
     public String getCarDetails() {
         String separator = ",";
         StringBuilder sb = new StringBuilder();

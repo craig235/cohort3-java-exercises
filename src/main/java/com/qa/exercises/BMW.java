@@ -1,6 +1,6 @@
 package com.qa.exercises;
 
-public class BMW extends Car {
+public class BMW extends CarProperties implements Car {
 
     private int noOfCylinders;
     private int maxTorque;
@@ -19,7 +19,6 @@ public class BMW extends Car {
         return maxTorque;
     }
 
-    @Override
     public String getCarDetails() {
         String separator = ",";
         StringBuilder sb = new StringBuilder();
