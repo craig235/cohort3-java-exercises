@@ -20,9 +20,9 @@ public class Audi extends Car {
     }
 
     @Override
-    public String displayDetails() {
+    public String getCarDetails() {
         String separator = ",";
-        StringBuilder sb = new StringBuilder(super.displayDetails());
+        StringBuilder sb = new StringBuilder(super.getCarDetails());
         sb.append(separator);
         sb.append(getModel()).append(separator);
         sb.append(isEVAvailable()).append(separator);

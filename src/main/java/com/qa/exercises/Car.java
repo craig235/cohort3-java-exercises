@@ -24,9 +24,14 @@ public class Car {
         BMW bmw = new BMW(1, "BMW", 25000f, 2500, "Petrol", 2015, 6, 300);
         Audi audi = new Audi(2, "Audi", 24000f, 2000, "Diesel", 2019, "R8", true);
 
-        // Display car details
-        System.out.println(bmw.displayDetails());
-        System.out.println(audi.displayDetails());
+        // Display car details - direct calls.
+        System.out.println(bmw.getCarDetails());
+        System.out.println(audi.getCarDetails());
+
+        // Display car details - polymorphic calls.
+        CarService.printCarDetails(bmw);
+        CarService.printCarDetails(audi);
+
     }
 
     public int getId() {
@@ -53,7 +58,7 @@ public class Car {
         return manufacturingYear;
     }
 
-    public String displayDetails() {
+    public String getCarDetails() {
         String separator = ",";
         StringBuilder sb = new StringBuilder();
         sb.append(getId()).append(separator);
