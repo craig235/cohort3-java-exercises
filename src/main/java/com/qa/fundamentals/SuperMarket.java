@@ -1,4 +1,4 @@
-package com.qa.exercises;
+package com.qa.fundamentals;
 
 public class SuperMarket {
     public static void main(String[] args) {
