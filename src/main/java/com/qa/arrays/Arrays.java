@@ -1,5 +1,7 @@
 package com.qa.exercises;
 
+import com.qa.oop.Product;
+
 public class Arrays {
     public static void main(String[] args) {
 

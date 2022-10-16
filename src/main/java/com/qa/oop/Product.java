@@ -44,15 +44,15 @@ public class Product {
         this.isAvailable = isAvailable;
     }
 
-    public String getSellerName() {
+    public static String getSellerName() {
         return sellerName;
     }
 
-    public String getContactNo() {
+    public static String getContactNo() {
         return sellerContactNo;
     }
 
-    public String getSellerEmailAddress() {
+    public static String getSellerEmailAddress() {
         return sellerEmailAddress;
     }
 
@@ -96,7 +96,7 @@ public class Product {
         return getPrice() * getDiscountedPercentage() / 100;
     }
 
-    public String displaySellerContactDetails() {
+    public static String displaySellerContactDetails() {
         String separator = ",";
         StringBuilder sb = new StringBuilder();
         sb.append(getSellerName()).append(separator);

@@ -1,5 +1,7 @@
 package com.qa.exercises;
 
+import com.qa.oop.Product;
+
 public class ArrayUtils {
 
     public static int arraySum(int[] array) {
