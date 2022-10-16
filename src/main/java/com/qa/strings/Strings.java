@@ -1,4 +1,4 @@
-package com.qa.exercises;
+package com.qa.strings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ public class Strings {
 
         // Counting words in a string.
         final String sentence = "hello how are you ";
-        System.out.println("wc in string is: " + sentence.trim().split("\s").length);
+        System.out.println("wc in string is: " + StringUtil.wordCount(sentence.trim()));
 
         // Array of strings.
         final String[] addressList = new String[]{
@@ -20,12 +20,11 @@ public class Strings {
 
         List<String> invalidList = new ArrayList<>();
         List<String> validList = new ArrayList<>();
-        for (String email : addressList) {
-            boolean valid = email.matches("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$");
-            if (valid) {
-                validList.add(email);
+        for (String address : addressList) {
+            if (StringUtil.isValidEmail(address)) {
+                validList.add(address);
             } else {
-                invalidList.add(email);
+                invalidList.add(address);
             }
         }
 
