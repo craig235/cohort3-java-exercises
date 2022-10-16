@@ -1,4 +1,4 @@
-package com.qa.exercises;
+package com.qa.arrays;
 
 import com.qa.oop.Product;
 

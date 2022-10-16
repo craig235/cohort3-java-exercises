@@ -1,4 +1,4 @@
-package com.qa.exercises;
+package com.qa.arrays;
 
 import com.qa.oop.Product;
 
@@ -7,7 +7,7 @@ public class Arrays {
 
         // Arrays of primitives
         int[] numbers = new int[] {1,6,2,8,3,9,15,0};
-        System.out.println("Sum: "+ArrayUtils.arraySum(numbers));
+        System.out.println("Sum: "+ ArrayUtils.arraySum(numbers));
         System.out.println("Min: "+ArrayUtils.arrayMinNumber(numbers));
         System.out.println("MAx: "+ArrayUtils.arrayMaxNumber(numbers));
 
